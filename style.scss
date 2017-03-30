@@ -1,0 +1,117 @@
+@charset 'utf-8';
+
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+// Font Variables
+$roboto-slab: 'Roboto Slab', serif;   
+$open-sans: 'Open Sans', sans-serif;
+
+$red: #B32024;
+$black: #333333;
+
+#header {
+    width: 100%;
+    height: 150px;
+}
+
+#logo {
+    height: 300px;
+      width: 50%;
+    margin: 0 auto;
+      margin-bottom: 15px;
+}
+
+#logo img {
+    height: 300px;
+  display:block;
+    margin:auto;
+}
+
+#wordmark {
+    height: 10%;
+      width: 50%;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+#wordmark img {
+    height: 10vw;
+     display:block;
+    margin:auto;
+}
+
+#date {
+    text-align: center;
+    font-family: $roboto-slab;
+    font-size: 2em;
+    color: $red;
+      width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#info {
+    text-align: center;
+    font-family: $open-sans;
+       font-size: 1.15em;
+    color: $black;
+      width: 50%;
+    margin: 0 auto;
+     margin-bottom: 50px;
+}
+
+#submit {
+       width: 50%;
+    margin: 0 auto;
+}
+
+.field input {
+    width: 75%;
+      display:block;
+    margin:auto;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 3px $black;
+    font-family: $roboto-slab;
+       font-size: 1em;
+  transition: border 0.3s;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0);
+  color: $black;
+    display:inline;
+          float:left; 
+
+}
+
+.button {
+     background: #B32024;
+font-family: "Roboto Slab", serif;
+vertical-align: middle;
+transform: translateY(-10%);
+transition: all 0.5s ease-out;
+font-weight: normal;
+padding-top: 15px;
+width: 125px;
+float: right;
+text-align: center;
+height: 25px;
+padding-bottom: 15px;
+text-decoration: none;
+color: white;
+
+}
+
+@media screen and (max-width: 1200px) {
+   .button {
+        display:block;
+        transform: translateY(30%);
+    margin:auto;
+    width: 100%;
+   }
+   .field input {
+    width: 95%;
+   
+
+    }
+
+}
